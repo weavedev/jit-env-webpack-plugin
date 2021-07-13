@@ -1,0 +1,36 @@
+{
+  "name": "@weavedev/jit-env-webpack-plugin",
+  "version": "0.1.0",
+  "description": "Injects .env.json files into the web application for development and adds an injection point for just-in-time injection when used in production.",
+  "main": "JitEnvWebpackPlugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weavedev/jit-env-webpack-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "html-webpack-plugin",
+    "env",
+    "environment",
+    "json",
+    "TypeScript"
+  ],
+  "author": {
+    "name": "Paul Gerarts",
+    "email": "dev@gerarts.nl"
+  },
+  "contributors": [
+    {
+      "name": "Paul Gerarts",
+      "email": "dev@gerarts.nl"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/weavedev/jit-env-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/weavedev/jit-env-webpack-plugin#readme"
+}
