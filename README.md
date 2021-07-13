@@ -222,6 +222,8 @@ CONFIG=$(cat $REPLACE_CONFIG | tr -d '\n' | tr -d '\r' | sed 's/"/\\"/g');
 sed -i "s/\"___INJECT_ENV___\"/$CONFIG/g" /path/to/index.html;
 ```
 
+We use a Dockerfile that mounts a JSON file and uses a script with the above as entrypoint to handle this step.
+
 ## License
 
 [MIT](https://github.com/weavedev/store/blob/master/LICENSE)
