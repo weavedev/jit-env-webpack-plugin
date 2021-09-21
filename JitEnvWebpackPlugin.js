@@ -253,7 +253,7 @@ class JitEnvWebpackPlugin {
     getIndentation = (html) => {
         const results = /([\t ]*)<head.*?>.*?\n([\t ]*)</.exec(html);
         
-        if (results[1] === undefined || results[2] === undefined) {
+        if (!results || results[1] === undefined || results[2] === undefined) {
             return {
                 preHead: 0,
                 head: 4,
