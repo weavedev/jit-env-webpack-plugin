@@ -216,7 +216,7 @@ module.exports = {
 export REPLACE_CONFIG=/path/to/config.env.json
 
 # Load env file contents
-CONFIG=$(cat $REPLACE_CONFIG | tr -d '\n' | tr -d '\r' | sed 's/"/\\"/g');
+CONFIG=$(cat $REPLACE_CONFIG | tr -d '\n' | tr -d '\r' | sed 's/"/\\"/g' | sed "s/\//\\\\\//g");
 
 # Inject env file contents into your index.html
 sed -i "s/\"___INJECT_ENV___\"/$CONFIG/g" /path/to/index.html;
