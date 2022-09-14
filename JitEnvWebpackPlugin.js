@@ -4,7 +4,7 @@ const path = require('path');
 
 // Try to load html-webpack-plugin for v4 and up
 let HtmlWebpackPlugin = undefined;
-try { require('html-webpack-plugin') } catch (_) {}
+try { HtmlWebpackPlugin = require('html-webpack-plugin') } catch (_) {}
 
 const NAME = 'JitEnvWebpackPlugin';
 
