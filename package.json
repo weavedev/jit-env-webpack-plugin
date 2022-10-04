@@ -1,6 +1,6 @@
 {
   "name": "@weavedev/jit-env-webpack-plugin",
-  "version": "1.0.1",
+  "version": "2.0.1-alpha.1",
   "description": "Injects .env.json files into the web application for development and adds an injection point for just-in-time injection when used in production.",
   "main": "JitEnvWebpackPlugin.js",
   "scripts": {
@@ -34,6 +34,6 @@
   },
   "homepage": "https://github.com/weavedev/jit-env-webpack-plugin#readme",
   "dependencies": {
-    "@weavedev/jit-env-snowpack-plugin": "^1.0.0"
+    "@weavedev/jit-env-snowpack-plugin": "^2.0.0"
   }
 }
