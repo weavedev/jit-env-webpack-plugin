@@ -74,6 +74,11 @@ new JitEnvWebpackPlugin({
      * files in the linter's configuration, but it is here if you need it.
      */
     emitTypesPrefix: "/* tslint:disable */",
+
+    /**
+     * Allows you to omit the `?` from the emitted type declarations.
+     */
+    emitTypesNonOptional: true,
 });
 ```
 
