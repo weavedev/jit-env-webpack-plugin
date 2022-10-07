@@ -18,6 +18,7 @@ const CANARY = path.resolve(TARGET_DIR, 'CANARY');
  * @property {string} [userEnv] the user's env path
  * @property {string} [emitTypes] emit a TypeScript types file based on defaultEnv
  * @property {string} [emitTypesPrefix] add something to the beginning of the emitTypes file (usefull to disable linters etc.)
+ * @property {boolean} [emitTypesNonOptional] emit the types as non-optional type definitions (i.e. instead of prop?: Type, we emit prop: Type)
  */
 
 class JitEnvWebpackPlugin {
